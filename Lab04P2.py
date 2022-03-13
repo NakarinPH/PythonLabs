@@ -10,6 +10,7 @@ Tests the Node class.
 
 from node import Node
 
+#hello
 
 def length(head):
     """Returns the number of items in the linked structure
