@@ -15,7 +15,6 @@ class ListStack(object):
         if sourceCollection:
             for item in sourceCollection:
                 self.push(item)
-                print("hello")
 
     # Accessor methods
     def isEmpty(self):
