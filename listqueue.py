@@ -53,7 +53,7 @@ class ListQueue(object):
         if type(self) != type(other) or \
                 len(self) != len(other):
             return False
-        for item in self:
+        for item in range(len(self)):
             if self.items[item] != other.items[item]:
                 return False
         return True
