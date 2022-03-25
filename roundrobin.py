@@ -17,7 +17,6 @@ def round_robin(job_queue):
         print("Job queue:", job_queue)
 
 
-
 def test_round_robin():
     job_list = [17, 5, 32, 8, 24]
     job_queue = ListQueue(job_list)
