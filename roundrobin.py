@@ -10,7 +10,7 @@ def round_robin(job_queue):
         print("Current job:", current_job)
         if current_job > 10:
             print("Job unfinished. Return to the rear of the queue.")
-            current_job -= 10
+            current_job = current_job - 10
             job_queue.add(current_job)
         else:
             print("Job finished")
