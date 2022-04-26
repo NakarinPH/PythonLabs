@@ -1,13 +1,18 @@
+from queueMethods import addPlayer, removePlayer
+
+
 def main():
     # Initializing a queue
-    queue = ['Peter', 'Ann']
+    myQueue = ['Peter', 'Ann']
+
+    print('Welcome to Disney rides menu. Please select the menu')
+    print("Current queue: ", myQueue)
 
     loop = True
 
     while loop:
-        print('Welcome to Disney rides menu. Please select the menu')
         print('[1] - Add a player in the queue')
-        print('[2] - Remove a player from the queue')
+        print('[2] - Serve the next player in the queue')
         print('[3] - Show the queue')
         print('[4] - Look up a player')
         print('[5] - Exit the menu')
@@ -15,20 +20,20 @@ def main():
 
         if selectors == '1':
             # call the method to add a player in the queue
-            addPlayer(queue)
+            addPlayer(myQueue)
         elif selectors == '2':
             # call a method to remove a player from the queue
-            removePlayer(queue)
+            removePlayer(myQueue)
         elif selectors == '3':
             # call a method to show the queue
-            showQueue(queue)
+            showQueue(myQueue)
         elif selectors == '4':
             # call a method to look up if the player is in the queue
-            lookUpPlayer(queue)
+            lookUpPlayer(myQueue)
         elif selectors == '5':
             quit()
         else:
             print("Invalid")
-
+    #loop = input("Continueues? y/n: ")
 
 main()
