@@ -12,11 +12,12 @@ def addNumber(phone_book_list):
     name = input("Enter Name: ")
     phoneNumber = input("Enter Phone Number: ")
     phone_book_list[name] = phoneNumber
+    print("Adding " + name + ": " + phoneNumber + " in phone book is completed")
 
 
 def removeNumber(phone_book_list):
     print("Remove a Phone Number")
-    name = input("Enter Name to be remove: ")
+    name = input("Enter Name to be removed: ")
     if name in phone_book_list:
         del phone_book_list[name]
     else:

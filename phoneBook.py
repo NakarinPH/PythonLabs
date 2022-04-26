@@ -13,7 +13,7 @@ def main():
 
     while loop:
         selections = input(
-            "Enter [1] - Look up a Phone Number [2] - Add a Phone Number [3] - Remove a Phone Number [4] - Print Phone Book [5] - Quit: ")
+            "Menu  [1] - Look up a Phone Number \n      [2] - Add a Phone Number \n      [3] - Remove a Phone Number \n      [4] - Print Phone Book \n      [5] - Quit  \nPlease enter here: ")
 
         if selections == '1':
             phone_book.lookUpNumber(phone_book_list)
