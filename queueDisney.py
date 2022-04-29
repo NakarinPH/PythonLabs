@@ -5,7 +5,7 @@ def main():
     # Initializing a queue
     myQueue = ['Peter', 'Ann']
 
-    print('Welcome to Disney rides menu. Please select the menu')
+    print('Welcome to Disney Rides menu. Please select the menu')
 
     loop = True
 
@@ -30,6 +30,7 @@ def main():
             # call a method to look up if the player is in the queue
             # methodToBeCalled(myQueue)
         elif selectors == '5':
+            print("Thank you for using Disney Rides menu. Have a nice day!")
             quit()
         else:
             print("Invalid")
