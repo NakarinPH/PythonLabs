@@ -1,13 +1,14 @@
 # Python Object Oriented Programming by Joe Marini course example
 # Using data classes to represent data objects
+from dataclasses import dataclass
 
 
+@dataclass
 class Book:
-    def __init__(self, title, author, pages, price):
-        self.title = title
-        self.author = author
-        self.pages = pages
-        self.price = price
+    title: str
+    author: str
+    pages: int
+    price: float
 
 
 # create some instances
