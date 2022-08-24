@@ -10,4 +10,4 @@ def main():
         full_retirement_age = calulate_retirement_age(birth_year,birth_month)
 
 def calulate_retirement_age(birth_year,brith_month):
-    # if birth_year <= 1960
+# if birth_year <= 1960
